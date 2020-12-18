@@ -15,8 +15,6 @@ docker-machine create --driver virtualbox default
 
 docker-machine ls # check creation
 
-docker-machine env default # not necessary?
-
 eval "$(docker-machine env default)"
 
 docker run hello-world
