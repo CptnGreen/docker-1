@@ -4,15 +4,18 @@ Jonah in the whale
 
 ## Setup
 
+NB: Virtualbox step needs password and possibly also needs to address System Preference setting
+
 ```zsh
 brew install docker docker-machine
 
-# needs password; possibly needs to address System Preference setting
 brew cask install virtualbox
 
 docker-machine create --driver virtualbox default
 
-docker-machine env default
+docker-machine ls # check creation
+
+docker-machine env default # not necessary?
 
 eval "$(docker-machine env default)"
 
