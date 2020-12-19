@@ -7,7 +7,12 @@
 # you are not allowed to use your shell’s builtin to set 
 # these variables by hand.
 
-eval "$(docker-machine env Char)"
+# You have to run the command below directly from the 
+# commandline, not by calling the script!
+# ---------------------
 
+# eval $(docker-machine env Char)
+
+# ---------------------
 # Tip: run `echo "$(docker-machine env Char)"` to
 # understand what's happening
