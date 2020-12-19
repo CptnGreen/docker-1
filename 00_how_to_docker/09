@@ -1,1 +1,39 @@
 #!/bin/bash
+
+# From the shell of a debian container, install via the 
+# container’s package manager everything you need to compile 
+# C source code and push it onto a git repo (of course, make 
+# sure before that the package manager and the packages 
+# already in the container are updated). For this exercise, 
+# you should only specify the commands to be run directly 
+# in the container.
+
+# Command to launch the container:
+docker run -it --rm debian
+
+
+# Commands to be run inside the container
+# (just copy and paste line by line):
+
+# -------------------
+# Stage 01:
+# -------------------
+
+# apt update
+# apt install -y build-essential git
+
+# cd /root || return
+# git clone https://github.com/CptnGreen/libft.git
+# cd libft || return
+
+# -------------------
+# Stage 02 (needs github creds for the push step):
+# -------------------
+
+# git checkout -b feature/test-docker
+# touch hello
+# git add hello
+# git config --global user.email "slisandr@student.21-school.ru"
+# git config --global user.name "slisandr"
+# git commit -m "test docker project"
+# git push -u origin feature/test-docker:feature/test-docker
