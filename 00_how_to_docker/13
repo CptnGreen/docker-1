@@ -1,1 +1,8 @@
 #!/bin/bash
+
+# Print the environment variables of the spawning-pool 
+# container in one command,to be sure that you have configured 
+# your container properly
+
+# container must be running!
+docker exec spawning-pool env
