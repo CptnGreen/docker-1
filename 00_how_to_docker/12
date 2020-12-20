@@ -21,3 +21,7 @@ mysql
 # docker exec -it spawning-pool /bin/bash
 # mysql -u root -p
 # SHOW DATABASES;
+
+# Docs:
+# -------------
+# https://hub.docker.com/_/mysql
