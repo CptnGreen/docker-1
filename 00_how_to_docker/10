@@ -1,1 +1,7 @@
 #!/bin/bash
+
+# Create a volume named hatchery.
+
+docker volume create hatchery
+
+# check creation via `docker volume ls`
