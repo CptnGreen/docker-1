@@ -1,1 +1,23 @@
 #!/bin/bash
+
+# Launch a mysql container as a background task. It should 
+# be able to restart on its own in case of error, and the root 
+# password of the database should be Kerrigan. You will also 
+# make sure that the database is stored in the hatchery volume, 
+# that the container directly creates a database named zerglings, 
+# and that the container itself is named spawning-pool.
+
+docker run \
+-d \
+--restart on-failure \
+-e MYSQL_ROOT_PASSWORD=Kerrigan \
+-e MYSQL_DATABASE=zerglings \
+-v hatchery:/var/lib/mysql \
+--name spawning-pool \
+mysql
+
+# To check:
+# -------------
+# docker exec -it spawning-pool /bin/bash
+# mysql -u root -p
+# SHOW DATABASES;
