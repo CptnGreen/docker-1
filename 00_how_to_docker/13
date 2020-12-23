@@ -5,4 +5,6 @@
 # your container properly
 
 # container must be running!
-docker exec spawning-pool env
+docker exec \
+spawning-pool \
+env

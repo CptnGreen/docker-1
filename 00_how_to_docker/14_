@@ -22,3 +22,7 @@ docker run \
 wordpress
 
 # TODO: check DB access
+
+# Docs:
+# -------------
+# https://hub.docker.com/_/wordpress

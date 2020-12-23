@@ -9,7 +9,10 @@
 # in the container.
 
 # Command to launch the container:
-docker run -it --rm debian
+docker run \
+-it \
+--rm \
+debian
 
 
 # Commands to be run inside the container

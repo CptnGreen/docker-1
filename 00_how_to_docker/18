@@ -1,1 +1,7 @@
 #!/bin/bash
+
+# Relaunch the overlord container.
+
+# see ex06
+docker restart \
+overlord

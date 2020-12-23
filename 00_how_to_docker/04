@@ -3,7 +3,8 @@
 # Get the hello-world container from the Docker Hub, 
 # where it’s available.
 
-docker pull hello-world
+docker pull \
+hello-world
 
 # Full form:
 # docker pull docker.io/library/hello-world:latest

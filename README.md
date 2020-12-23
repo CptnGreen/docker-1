@@ -24,6 +24,4 @@ docker-machine stop default
 
 ## Links
 
-### Docker-machine setup on MacOS
-
-https_medium.com/?url=https%3A%2F%2Fmedium.com%2Fcrowdbotics%2Fa-complete-one-by-one-guide-to-install-docker-on-your-mac-os-using-homebrew-e818eb4cfc3
+1. [Docker-machine setup on MacOS](https://medium.com/crowdbotics/a-complete-one-by-one-guide-to-install-docker-on-your-mac-os-using-homebrew-e818eb4cfc3)
