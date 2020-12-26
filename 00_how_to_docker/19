@@ -12,8 +12,48 @@
 # on the 3000 port. You will also list all the necessary commands 
 # in your repository.
 
+# It appears to be that Python is no longer supporting v.2 images
+# So instead of official image i use alternative one
+
 docker run \
--d \
---name lair \
+--name Abathur \
+-v ~:/root \
 -p 3000:3000 \
-python:slim
+-e FLASK_RUN_PORT=3000 \
+-e FLASK_APP=hello.py \
+-it \
+frolvlad/alpine-python2
+
+
+# -------------------
+# Stage 01: Run inside the container:
+# -------------------
+
+# pip install flask
+# mkdir /opt/flask
+# cd /opt/flask || exit
+# apk add vim
+# vim hello.py
+
+# -------------------
+# hello.py
+# -------------------
+
+# from flask import Flask
+# app = Flask(__name__)
+
+# @app.route('/')
+# def hello_world():
+#    return '<h1>Hello World</h1>'
+
+# -------------------
+# Stage 02: Run inside the container:
+# -------------------
+
+# flask run --host=0.0.0.0
+
+# -------------------
+# Stage 03: Run on the host:
+# -------------------
+
+# curl "$(docker-machine ip Char):3000"
