@@ -1,1 +1,7 @@
 #!/bin/bash
+
+# Launch a rabbitmq SERVICE that will be named orbital-command. 
+# You should define a specific user and password for the RabbitMQ 
+# service, they can be whatever you want. This service will be 
+# on the overmind network.
+
