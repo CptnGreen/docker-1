@@ -3,4 +3,8 @@
 # Create an overlay-type internal network that you will name 
 # overmind.
 
+docker network create \
+-d overlay \
+overmind
 
+# check via `docker network ls`
