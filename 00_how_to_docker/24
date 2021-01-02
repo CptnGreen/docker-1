@@ -5,3 +5,13 @@
 # service, they can be whatever you want. This service will be 
 # on the overmind network.
 
+docker service create \
+--name orbital-command \
+-e RABBITMQ_USER=user \
+-e RABBITMQ_PASSWORD=user \
+--network overmind \
+rabbitmq
+
+# Check: 
+# `docker service ls` and 
+# `docker service ps orbital-command`
