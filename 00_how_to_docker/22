@@ -4,11 +4,15 @@
 # leader (the command to take control of Aiur is not requested).
 
 # Step 1.
-# Ssh to the Aiur VM via `docker-machine ssh Aiur`
+# Run `docker swarm join-token worker`, 
+# copy output to the clipboard
 
 # Step 2.
-# Paste and run command from the ex20's output
+# "SSH" to the Aiur VM via `docker-machine ssh Aiur`
 
 # Step 3.
-# Check swarm status via `docker node ls` from the host or
-# swarm manager (Char)
+# Paste and run command from the output of Step 1.
+
+# Step 4.
+# Check swarm status via `docker node ls` 
+# from the host or swarm manager (Char)

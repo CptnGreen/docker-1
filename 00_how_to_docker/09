@@ -28,6 +28,7 @@ debian
 # cd /root || return
 # git clone https://github.com/CptnGreen/libft.git
 # cd libft || return
+# make
 
 # -------------------
 # Stage 02 (needs github creds for the push step):

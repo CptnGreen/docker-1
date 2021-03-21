@@ -21,9 +21,9 @@ nginx
 # check_06()
 # {
 # 	declare char_ip
-
+#
 # 	char_ip=$(docker-machine ip Char)
 # 	curl -s "http://${char_ip}:5000" | textutil -stdin -stdout -convert txt
 # }
-
+#
 # check_06
