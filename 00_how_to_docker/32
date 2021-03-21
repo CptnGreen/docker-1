@@ -3,6 +3,4 @@
 # Force quit and delete all the containers (whatever their status), 
 # in one command.
 
-# For some reason doesn't work with quotes
-
-docker container rm -f $(docker container ls -aq)
+docker container ls -aq | xargs docker container rm -f

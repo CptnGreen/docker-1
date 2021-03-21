@@ -3,16 +3,16 @@
 # Turn Aiur into a slave of the local swarm in which Char is 
 # leader (the command to take control of Aiur is not requested).
 
-# Step 1.
+# --- Step 1 ---
 # Run `docker swarm join-token worker`, 
 # copy output to the clipboard
-
-# Step 2.
+#
+# --- Step 2 ---
 # "SSH" to the Aiur VM via `docker-machine ssh Aiur`
-
-# Step 3.
+#
+# --- Step 3 ---
 # Paste and run command from the output of Step 1.
-
-# Step 4.
+#
+# --- Step 4 ---
 # Check swarm status via `docker node ls` 
 # from the host or swarm manager (Char)
