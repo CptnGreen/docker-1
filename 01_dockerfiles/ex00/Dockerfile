@@ -1,8 +1,13 @@
-FROM archlinux:base-devel
+# build:
+# `docker build - < Dockerfile`
 
-RUN pacman -Syu --noconfirm git xorg-server emacs
+# launch:
+# `docker run -it --rm <image id>`
 
-RUN git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
-RUN ~/.emacs.d/bin/doom -y install
+FROM alpine
 
-CMD emacs
+RUN apk update
+RUN apk add \
+  vim
+
+CMD ["vim"]
