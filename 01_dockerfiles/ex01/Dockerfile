@@ -28,6 +28,9 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
+# accept license agreement
+ENV TS3SERVER_LICENSE accept
+
 # create user, group, and set permissions
 RUN groupadd -g 503 teamspeak &&\
   useradd -u 503 -g 503 -d ${TS_DIR} teamspeak &&\
